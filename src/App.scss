@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.listUser {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+
+  .avatar {
+    max-width: 100px;
+    max-height: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vh;
+  padding: 0 5vh;
+
+  .avatar {
+    max-width: 200px;
+    max-height: 200px;
+    justify-self: center;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.card-info {
+  margin: 0.5vh 2vw;
+}
+
+.listRepo {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+
+  .repoCount {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  a {
+    word-wrap: anywhere;
+  }
+}

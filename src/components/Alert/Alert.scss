@@ -1,0 +1,18 @@
+.alert {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+    &.loading {
+        color: rgb(0, 128, 23);
+    }
+
+    &.error {
+        background: rgba(255, 1, 1, 0.3);
+    }
+
+    &.info {
+        background: rgba(22, 252, 1, 0.3);
+    }
+
+}
