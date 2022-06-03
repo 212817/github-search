@@ -2,8 +2,8 @@
   "compilerOptions": {
     "target": "es5",
     "lib": [
+      "es6",
       "dom",
-      "dom.iterable",
       "esnext"
     ],
     "allowJs": true,
@@ -18,9 +18,18 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./src/",
+    "types": [
+      "node",
+      "jest",
+      "@testing-library/jest-dom"
+    ],
   },
   "include": [
-    "src"
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
